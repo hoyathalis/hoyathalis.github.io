@@ -1,82 +1,52 @@
 ---
-title: 'ML4LM— Cleaning the Data'
-date: 2023-11-23
-medium_link: "https://hoyath.medium.com/ml4lm-cleaning-the-data-f93f911039c3"
+title: 'ML4LM- How does Lasso bring sparsity?'
+date: 2023-12-25
+medium_link: "https://hoyath.medium.com/ml4lm-how-does-lasso-bring-sparsity-29f3efe31ab3"
 
 permalink: /posts/2023/11/blog-post-4/
 tags:
   - Machine Learning
-  - Data Cleaning
+  - Reguralization
+  - Overfitting
 ---
+Many of us have heard about Lasso and its ability to bring sparsity to models, but not everyone understands the nitty-gritty of how it actually works. In a nutshell, Lasso is like a superhero for overfitting problems, tackling them through a technique called regularization. If you're not familiar with regularization and how it fights overfitting, I'd recommend checking that out first. For now, let's dive into the magic of how Lasso brings sparsity.
 
-Cleaning data for Machine Learning is like preparing for a road trip where your model is the driver, and your data is the map. However, the map is a mishmash of routes, some as straightforward as a highway, while others resemble a convoluted maze that even a GPS would find confusing.
+Lasso's cost function helps find the best model by balancing two goals: making accurate predictions (mean squared error) and keeping the number of factors in check (absolute values of coefficients). It does this by adding a penalty that encourages simpler, more focused models.
 
-## Missing Data:
+![formulae](https://cdn-images-1.medium.com/max/800/1*4OHa8IRywyTEiHPJO_UY_Q.png)
 
-In the realm of data, our info comes from diverse channels, creating a jigsaw puzzle. Sometimes, pieces need to be included, disrupting the flow of our machine-learning models. Our job is to decide: Do we fill those gaps or bid farewell to incomplete data records? The goal is to ensure our models churn out insights seamlessly.
 
-For example, in an employee performance dataset, the "Years of Experience" column has missing values, potentially due to administrative errors or new hires. To address this, you can fill the gaps with the mean or median, or choose to exclude records with missing data based on the specific use case and dataset characteristics.
+### Objective of Lasso
 
-```python
-import pandas as pd
+The objective of Lasso is to find the values of \( \beta \) that minimize this combined loss function, striking a balance between fitting the data well (MSE) and keeping the magnitude of the coefficients small (\( \left|\beta_i\right| \)). This helps in preventing overfitting and encourages sparsity in the model by pushing some coefficients to exactly zero, effectively performing variable selection.
 
-# Replace missing values in 'Years of Experience' with the median
-df['Years of Experience'].fillna(df['Years of Experience'].median(), inplace=True)
-```
+### How Lasso Brings Sparsity
 
-## Outliers and Noise:
+To understand how Lasso brings sparsity, let's consider a simple example with two coefficients \( \beta_1 \) and \( \beta_2 \) in a 2D plane. We have the equation:
 
-Think of outliers in data cleaning like the one person wearing a flashy costume at a black-tie event – they stand out a lot! These are the oddballs that stray from the usual crowd, making them rebels in our dataset.
+\[ \left|\beta_1\right| + \left|\beta_2\right| \leq t \]
 
-For example, in a dataset of monthly sales figures for a retail store, imagine the typical daily sales range is $1,000 to $5,000. However, there's an outlier where sales for a single day spike to $50,000. This extreme deviation could significantly impact average sales calculations and needs careful handling during data cleaning to ensure accurate insights into the store's usual performance.
 
-There are various techniques to identify outliers in a dataset. Some commonly used methods are visualizing using box plots, IQR (Interquartile Range), Isolation Forest, Z-score, and others.
 
-Let's talk about IQR. It is a measure that helps us understand how spread out our data is. Imagine you have a list of numbers representing, let's say, daily sales. If you arrange these numbers in order, the IQR is the range that covers the middle portion of your data, between the 25th and 75th percentiles. In simpler terms, it gives you an idea of where most of your data lies and helps identify values that might be too far from the typical range.
+![formulae](https://cdn-images-1.medium.com/max/800/1*gadj3JduWmmWTCQ-mDOGUg.png)
 
-```python
-import numpy as np
 
-# Calculate the IQR
-Q1 = df['Daily Sales'].quantile(0.25)
-Q3 = df['Daily Sales'].quantile(0.75)
-IQR = Q3 - Q1
+Think of it as trying to make these coefficients as small as possible, but there's a twist. We introduce a constraint that puts a limit on the total absolute values of these coefficients. It's like saying, 'Hey, keep the sum of these coefficients below a certain threshold.' This threshold is denoted as 't,' and its size matters - a larger 't' allows for larger coefficients, and it's inversely proportional to \( \lambda \).
 
-# Set the threshold for outlier detection (e.g., 1.5 times IQR)
-threshold = 1.5 * IQR
+Now, let's extend this to three dimensions with:
 
-# Remove outliers
-df_cleaned_sales = df[(df['Daily Sales'] >= (Q1 - threshold)) & (df['Daily Sales'] <= (Q3 + threshold))]
-```
+\[ \left|\beta_1\right| + \left|\beta_2\right| + \left|\beta_3\right| \leq t \]
 
-## Inconsistent Data:
+As the number of dimensions increases, the constraint creates a more pointy shape. On the 3D plane, this shape becomes sharper, and some coefficients are pushed to zero. For instance, a point on the Z-axis might result in \( \beta_1 \) and \( \beta_2 \) becoming zero, and so on.
 
-Inconsistent data occurs when information in a dataset lacks uniformity. For example, in a product price dataset, having values in both dollars and euros creates inconsistency. To ensure clarity and reliability, it's essential to standardize all prices into a single currency.
+![formulae](https://cdn-images-1.medium.com/max/800/1*EYOZMrPUF1mXL7xs0oApSw.png)
 
-```python
-# Convert all prices to dollars
-df['Price'] = df.apply(lambda row: row['Price'] * 1.18 if row['Currency'] == 'Euro' else row['Price'], axis=1)
-```
 
-## Duplicate Data:
+Visualizing the loss function (MSE) graph, it becomes apparent that the Lasso constraint, with its sharp corners, is more likely to intersect the ellipses representing the Residual Sum of Squares at points where some coefficients become zero. This unique constraint shape of Lasso, with its sharp corners, effectively pushes certain coefficients to zero, introducing simplicity to the model that other techniques might not achieve.
 
-In the database of online orders, duplicate entries arise when the same order is inadvertently recorded more than once, often due to glitches in the order processing system. These duplicates can lead to inaccuracies in analytics and reporting, emphasizing the importance of identifying and rectifying such redundancy to maintain the integrity of the data.
+![formulae](https://cdn-images-1.medium.com/max/800/1*1EfAhEVm8eW-tAgM8KW-eg.png)
 
-```python
-# Remove duplicate rows based on the 'Order ID' column
-df.drop_duplicates(subset='Order ID', inplace=True)
-```
 
-## Data Encoding:
+### Summary
 
-Data encoding in data cleaning is crucial, especially when dealing with categorical information like payment methods in an e-commerce dataset ('Credit Card' and 'PayPal'). This conversion to numerical representations, often done through techniques like one-hot encoding, is necessary because machine learning models inherently understand and process numerical values. This step ensures seamless integration of categorical data into the training process, allowing models to glean insights and make predictions effectively.
-
-For example, a "Gender" column with 'Male' and 'Female' as values.
-
-```python
-# Map categorical values to numerical codes
-payment_method_mapping = {'Credit Card': 0, 'PayPal': 1}
-df['Payment Method'] = df['Payment Method'].map(payment_method_mapping)
-```
-
-Thanks for reading! We will continue enhancing this and explore more exciting aspects. Stay tuned for some interesting insights!
+In a nutshell, Lasso's unique constraint shape, with its sharp corners, makes it great at pushing some coefficients to exactly zero, introducing a simplicity to the model that other techniques might not achieve.
