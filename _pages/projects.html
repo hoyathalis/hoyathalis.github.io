@@ -14,9 +14,22 @@ author_profile: true
         <h2>{{ project.title }}</h2>
         <p><strong>Completed:</strong> {{ project.date }}</p>
         <p>{{ project.description }}</p>
+        
+        <!-- Displaying Tags -->
+        <div class="project-tags">
+          {% for tag in project.tags %}
+            <span class="tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+
+        <!-- Links with icons -->
         <div class="project-links">
-          <a href="{{ project.github_link }}" class="button">GitHub</a>
-          <a href="{{ project.live_link }}" class="button">Live Demo</a>
+          <a href="{{ project.github_link }}" class="button">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="{{ project.live_link }}" class="button">
+            <i class="fas fa-link"></i> Live Demo
+          </a>
         </div>
       </div>
       <div class="project-image">
@@ -25,6 +38,9 @@ author_profile: true
     </div>
   {% endfor %}
 </div>
+
+<!-- Add FontAwesome icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 <style>
 .projects-container {
@@ -51,6 +67,20 @@ author_profile: true
   margin-top: 0;
 }
 
+.project-tags {
+  margin-top: 10px;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #0073e6;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  margin-right: 8px;
+}
+
 .project-links {
   margin-top: 10px;
 }
@@ -62,6 +92,12 @@ author_profile: true
   background-color: #0073e6;
   color: white;
   margin-right: 10px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.project-links .button i {
+  margin-right: 6px;
 }
 
 .project-image {

@@ -1,13 +1,22 @@
-- title: "Project Title 1"
-  date: "2023"
-  description: "A brief description of the first project."
-  github_link: "https://github.com/username/project1"
-  live_link: "https://live-demo.com/project1"
-  image: "/assets/images/project1.jpg"
+- title: "Phi AI for Low/No Code (Pega)"
+  date: "Aug-2024"
+  description: "Phi AI for Pega is a Chrome extension that leverages two key functionalities: it analyzes critical business logic in Pega, identifying and resolving issues in activities and data transforms to prevent production failures, and it also uses Retrieval-Augmented Generation (RAG) with Pinecone to answer Pega domain-specific questions. This combination enhances development efficiency by streamlining workflows, improving code quality, and offering instant insights."
+  github_link: "https://github.com/hoyathalis/project1"
+  live_link: "https://chromewebstore.google.com/detail/phi-ai-for-lowno-code-peg/khohhongjlidnbinnkibbbhkmjhmhhoo?hl=en"
+  image: "/images/proj1.png"
+  tags:
+    - RAG
+    - LLM
+    - Java Script
+    - Pinecone
 
-- title: "Project Title 2"
-  date: "2022"
-  description: "A brief description of the second project."
-  github_link: "https://github.com/username/project2"
-  live_link: "https://live-demo.com/project2"
-  image: "/assets/images/project2.jpg"
+- title: "Trading Agent using Reinforcement Learning"
+  date: "June-2024"
+  description: "This project works on developing a Deep Reinforcement Learning (DRL) trading agent designed for continuous action spaces. We focus on algorithms like Deep Q-Network (DQN) and Actor-Critic, which are well-suited for such environments. Additionally, we design optimized reward functions and state representations to capture key financial metrics and market dynamics, enabling the agent to learn effective trading strategies."
+  github_link: "https://github.com/hoyathali/TradingAgentRL"
+  image: "images/proj2.jpg"
+  tags:
+    - Reinforcement Learning
+    - DQN
+    - SAC
+    - Python
