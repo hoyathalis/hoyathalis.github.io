@@ -1,8 +1,9 @@
 ---
 title: 'ML4LM - Vanishing Gradient Problem?'
 date: 2024-01-02
-medium_link:"https://hoyath.medium.com/vanishing-gradient-problem-583ce734af39"
-permalink: /posts/2012/08/blog-post-1/
+medium_link: "https://hoyath.medium.com/vanishing-gradient-problem-583ce734af39"
+
+permalink: /posts/2024/01/blog-post-2/
 tags:
   - Neural Networks
   - Activation Function

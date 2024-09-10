@@ -1,17 +1,14 @@
 ---
 title: 'ML4LM- How does Lasso bring sparsity?'
 date: 2023-12-25
-permalink: /posts/2013/08/blog-post-2/
-medium_link:"https://hoyath.medium.com/ml4lm-how-does-lasso-bring-sparsity-29f3efe31ab3"
+medium_link: "https://hoyath.medium.com/ml4lm-how-does-lasso-bring-sparsity-29f3efe31ab3"
+
+permalink: /posts/2023/12/blog-post-2/
 tags:
+  - Machine Learning
   - Reguralization
   - Overfitting
-  - L1
-  - L2
 ---
-
-## How Lasso Brings Sparsity
-
 Many of us have heard about Lasso and its ability to bring sparsity to models, but not everyone understands the nitty-gritty of how it actually works. In a nutshell, Lasso is like a superhero for overfitting problems, tackling them through a technique called regularization. If you're not familiar with regularization and how it fights overfitting, I'd recommend checking that out first. For now, let's dive into the magic of how Lasso brings sparsity.
 
 Lasso's cost function helps find the best model by balancing two goals: making accurate predictions (mean squared error) and keeping the number of factors in check (absolute values of coefficients). It does this by adding a penalty that encourages simpler, more focused models.
