@@ -7,15 +7,12 @@
 main:
   - title: "Projects"
     url: /projects/
-    
+
   - title: "Resume"
     url: /resume/
-    
-
-
-        
- # - title: "Blog Posts"
- #   url: /year-archive/
+       
+  - title: "Blog Posts"
+    url: /year-archive/
     
 
  

@@ -6,6 +6,12 @@ redirect_from:
   - /about/
   - /about.html
 news_and_updates:
+  - date: "Sep 2023"
+    organization: "University Of California, Riverside"
+    url: "https://ucr.edu"
+    logo: "https://websites.ucr.edu/sites/default/files/styles/form_preview/public/logo-horizontal-on-white_0.png?itok=C8v1rbQR"
+    description: "Pursuing a Master’s in Machine Learning to enhance my industry experience with advanced theoretical and practical knowledge."
+
   - date: "Feb 2023"
     organization: "Bluevoir Technologies"
     url: "https://bluevoir.com"
