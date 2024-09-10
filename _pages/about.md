@@ -6,9 +6,9 @@ redirect_from:
   - /about/
   - /about.html
 ---
-    <h1>Hello!</h1>
-    <p>I’m Hoyath Ali, a Master’s student in Computer Science at the <a href="https://www.ucr.edu/">University of California, Riverside</a> 🎓, with 3 years of experience in machine learning. My career has involved developing systems to enhance financial security and optimize clinical trial protocols .</p>
-    <p>I’m passionate about machine learning and deep learning , focusing on fine-tuning large language models (LLMs) ✨ and exploring retrieval-augmented generation (RAG) 🔍. My technical skill set includes Python, JavaScript, and frameworks such as <a href="https://pytorch.org/">PyTorch</a> 🔥, <a href="https://scikit-learn.org/">Scikit-learn</a> 📊, and <a href="https://huggingface.co/transformers/">Transformers</a> 🧠. I also have hands-on experience with <a href="https://aws.amazon.com/">AWS</a> ☁️, <a href="https://www.docker.com/">Docker</a> 🐳, and <a href="https://kubernetes.io/">Kubernetes</a> 🛠️ for real-time model monitoring and deployment.</p>
+Hello! I’m Hoyath Ali, a Master’s student in Computer Science at the <a href="https://www.ucr.edu/">University of California, Riverside</a> 🎓, with 3 years of experience in machine learning. My career has involved developing systems to enhance financial security and optimize clinical trial protocols .
+
+I’m passionate about machine learning and deep learning , focusing on fine-tuning large language models (LLMs)  and exploring retrieval-augmented generation (RAG) . My technical skill set includes Python, JavaScript, and frameworks such as <a href="https://pytorch.org/">PyTorch</a> , <a href="https://scikit-learn.org/">Scikit-learn</a> , and <a href="https://huggingface.co/transformers/">Transformers</a> . I also have hands-on experience with <a href="https://aws.amazon.com/">AWS</a> , <a href="https://www.docker.com/">Docker</a> , and <a href="https://kubernetes.io/">Kubernetes</a>  for real-time model monitoring and deployment.
 
 ## News and Updates
 
