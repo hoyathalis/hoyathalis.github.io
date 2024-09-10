@@ -9,8 +9,6 @@ tags:
   - Data Cleaning
 ---
 
-# ML4LM - Cleaning the Data
-
 Cleaning data for Machine Learning is like preparing for a road trip where your model is the driver, and your data is the map. However, the map is a mishmash of routes, some as straightforward as a highway, while others resemble a convoluted maze that even a GPS would find confusing.
 
 ## Missing Data:
