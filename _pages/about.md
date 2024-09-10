@@ -52,7 +52,7 @@ I specialize in building, fine-tuning, and deploying machine learning models, wi
   <tr>
     <td style="border: none;">
       <a href="{{ update.url }}">
-        <img src="{{ update.logo }}" alt="{{ update.organization }}" style="width:500px; height:auto;">
+        <img src="{{ update.logo }}" alt="{{ update.organization }}" style="width:50px; height:auto;">
       </a>
     </td>
     <td>{{ update.date }}</td>
@@ -70,7 +70,7 @@ I specialize in building, fine-tuning, and deploying machine learning models, wi
       <div style="display: flex; align-items: center;">
         <img src="{{ update.logo }}" alt="{{ update.organization }}" style="width:100px; height:auto; margin-right: 20px;">
         <div>
-          <h3>{{ update.date }}: {{ update.title }}</h3>
+          <h3>{{ update.date }}{{ update.title }}</h3>
           <p>{{ update.description }}</p>
         </div>
       </div>
