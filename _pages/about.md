@@ -51,3 +51,20 @@ I specialize in building, fine-tuning, and deploying machine learning models, wi
   </tr>
   {% endfor %}
 </table>
+
+
+<div style="width:100%; display: flex; flex-direction: column;">
+  {% for update in page.news_and_updates %}
+  <div style="margin-bottom: 20px; border-bottom: 1px solid #ccc; padding: 10px 0;">
+    <a href="{{ update.url }}" style="text-decoration: none; color: #000;">
+      <div style="display: flex; align-items: center;">
+        <img src="{{ update.logo }}" alt="{{ update.organization }}" style="width:100px; height:auto; margin-right: 20px;">
+        <div>
+          <h3>{{ update.date }}: {{ update.organization }}</h3>
+          <p>{{ update.description }}</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  {% endfor %}
+</div>
