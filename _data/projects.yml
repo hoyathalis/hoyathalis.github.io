@@ -14,7 +14,7 @@
   date: "June-2024"
   description: "This project works on developing a Deep Reinforcement Learning (DRL) trading agent designed for continuous action spaces. We focus on algorithms like Deep Q-Network (DQN) and Actor-Critic, which are well-suited for such environments. Additionally, we design optimized reward functions and state representations to capture key financial metrics and market dynamics, enabling the agent to learn effective trading strategies."
   github_link: "https://github.com/hoyathali/TradingAgentRL"
-  image: "images/proj2.jpg"
+  image: "images/proj2.png"
   tags:
     - Reinforcement Learning
     - DQN

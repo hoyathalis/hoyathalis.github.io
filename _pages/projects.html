@@ -73,12 +73,18 @@ author_profile: true
 
 .tag {
   display: inline-block;
-  background-color: #0073e6;
+  background-color: #52adc8;
   color: white;
   padding: 5px 10px;
   border-radius: 12px;
   font-size: 12px;
   margin-right: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.tag:hover {
+  background-color: white;
+  color: black;
 }
 
 .project-links {
@@ -87,13 +93,20 @@ author_profile: true
 
 .project-links .button {
   text-decoration: none;
-  padding: 8px 12px;
+  padding: 6px 10px;
   border-radius: 4px;
-  background-color: #0073e6;
-  color: white;
+  background-color: white;
+  color: #52adc8;
+  border: 1px solid #52adc8;
   margin-right: 10px;
   display: inline-flex;
   align-items: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.project-links .button:hover {
+  background-color: #52adc8;
+  color: white;
 }
 
 .project-links .button i {
