@@ -79,4 +79,4 @@ I specialize in building, fine-tuning, and deploying machine learning models, wi
   {% endfor %}
 </div>
 
-<a href= "https://hoyathalis.github.io/year-archive/"> ###more</a>
+<a href= "https://hoyathalis.github.io/year-archive/"> click here for more</a>
