@@ -8,8 +8,8 @@ main:
   - title: "Resume"
     url: /resume/
     
- # - title: "Projects"
- #   url: /publications/
+  - title: "Projects"
+    url: /projects/
 
         
  # - title: "Blog Posts"
