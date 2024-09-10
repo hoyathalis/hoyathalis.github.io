@@ -9,8 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-<iframe src="https://docs.google.com/gview?url=https://drive.google.com/uc?export=view&id=19YJvPKInqLvkIXVp1DBBTDMF1BSoZ9AW" width="100%" height="600px" style="border: none;"></iframe>
-
+<iframe src="https://drive.google.com/file/d/19YJvPKInqLvkIXVp1DBBTDMF1BSoZ9AW/preview" width="640" height="480" allow="autoplay"></iframe>
 Education
 ======
 * M.S. in Computer Science, University Of California, Riverside, 2024 (expected)
