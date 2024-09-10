@@ -1,7 +1,7 @@
 - title: "Phi AI for Low/No Code (Pega)"
   date: "Aug-2024"
   description: "Phi AI for Pega is a Chrome extension that leverages two key functionalities: it analyzes critical business logic in Pega, identifying and resolving issues in activities and data transforms to prevent production failures, and it also uses Retrieval-Augmented Generation (RAG) with Pinecone to answer Pega domain-specific questions. This combination enhances development efficiency by streamlining workflows, improving code quality, and offering instant insights."
-  github_link: "https://github.com/hoyathalis/project1"
+  github_link: ""
   live_link: "https://chromewebstore.google.com/detail/phi-ai-for-lowno-code-peg/khohhongjlidnbinnkibbbhkmjhmhhoo?hl=en"
   image: "/images/proj1.png"
   tags:
