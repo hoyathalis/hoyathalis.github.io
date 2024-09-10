@@ -9,29 +9,9 @@ redirect_from:
 
 {% include base_path %}
 
-<div style="position: absolute; top: 20px; right: 20px;">
-  <a href="{{ '/files/resume.pdf' | relative_url }}" target="_blank">
-    <img src="{{ '/path/to/pdf-icon.png' | relative_url }}" alt="View PDF" style="width: 40px; height: 40px;"/>
-  </a>
-</div>
-.pdf-link {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 1000; /* Ensures the link stays on top of other elements */
-}
-
-.pdf-link img {
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-}
-<div class="pdf-link">
-  <a href="{{ '/files/resume.pdf' | relative_url }}" target="_blank">
-    <img src="{{ '/path/to/pdf-icon.png' | relative_url }}" alt="View PDF"/>
-  </a>
-</div>
-
+**CV**
+======
+<iframe src="files/hoyathresume.pdf" width="100%" height="600px" style="border: none;"></iframe>
 
 Education
 ======
