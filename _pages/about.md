@@ -31,7 +31,7 @@ news_and_updates:
     description: "Joined Pegasystems in July 2019. Addressed critical issues, preventing major downtime for key clients and avoiding significant revenue losses."
 
 blogs:
-  - date: "Sep 2023"
+  - date: ""
     title: "ML4LM- How does Lasso bring sparsity?"
     url: "https://hoyath.medium.com/ml4lm-how-does-lasso-bring-sparsity-29f3efe31ab3"
     logo: "https://miro.medium.com/v2/resize:fit:640/format:webp/1*1EfAhEVm8eW-tAgM8KW-eg.png"
