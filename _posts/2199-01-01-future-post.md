@@ -1,6 +1,8 @@
 ---
 title: 'ML4LM— Cleaning the Data'
 date: 2023-11-23
+medium_link: "https://medium.com/your-article-url"
+
 permalink: /posts/2023/11/blog-post-4/
 tags:
   - Machine Learning
