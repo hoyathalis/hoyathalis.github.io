@@ -31,9 +31,10 @@ news_and_updates:
     description: "Joined Pegasystems in July 2019. Addressed critical issues, preventing major downtime for key clients and avoiding significant revenue losses."
 ---
 
-Hello! I’m Hoyath Ali, a Master’s student in Computer Science at the <a href="https://www.ucr.edu/">University of California, Riverside</a> 🎓, with 3 years of experience in machine learning. My career has involved developing systems to enhance financial security and optimize clinical trial protocols.
+**Hello! I’m Hoyath Ali**, a Master’s student in Computer Science at the [University of California, Riverside](https://www.ucr.edu/) 🎓, with over 3 years of experience in developing and deploying machine learning models. My work has spanned various domains, including optimizing operations and enhancing decision-making through data-driven solutions.
 
-I’m passionate about machine learning and deep learning, focusing on fine-tuning large language models (LLMs) and exploring retrieval-augmented generation (RAG). My technical skill set includes Python, JavaScript, and frameworks such as <a href="https://pytorch.org/">PyTorch</a>, <a href="https://scikit-learn.org/">Scikit-learn</a>, and <a href="https://huggingface.co/transformers/">Transformers</a>. I also have hands-on experience with <a href="https://aws.amazon.com/">AWS</a>, <a href="https://www.docker.com/">Docker</a>, and <a href="https://kubernetes.io/">Kubernetes</a> for real-time model monitoring and deployment.
+I specialize in building, fine-tuning, and deploying machine learning models, with a deep understanding of natural language processing (NLP), deep learning architectures, and real-time model monitoring. My expertise includes working with large language models (LLMs), optimizing algorithms for efficiency, and implementing scalable ML solutions using frameworks like [PyTorch](https://pytorch.org/), [Scikit-learn](https://scikit-learn.org/), and [Transformers](https://huggingface.co/transformers/). Additionally, I have hands-on experience deploying models in cloud environments with [AWS](https://aws.amazon.com/), [Docker](https://www.docker.com/), and [Kubernetes](https://kubernetes.io/), ensuring robust, production-grade performance.
+
 
 ## News and Updates
 
