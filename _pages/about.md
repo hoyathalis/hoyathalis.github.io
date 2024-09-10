@@ -29,6 +29,15 @@ news_and_updates:
     url: "https://www.pegasystems.com/"
     logo: "https://www.pega.com/sites/default/files/styles/1024/public/media/images/2021-10/pega-logo-horiztonal-prevcard.png?itok=C5-EphPx"
     description: "Joined Pegasystems in July 2019. Addressed critical issues, preventing major downtime for key clients and avoiding significant revenue losses."
+
+blogs:
+  - date: "Sep 2023"
+    title: "ML4LM- How does Lasso bring sparsity?"
+    url: "https://hoyath.medium.com/ml4lm-how-does-lasso-bring-sparsity-29f3efe31ab3"
+    logo: "https://miro.medium.com/v2/resize:fit:640/format:webp/1*1EfAhEVm8eW-tAgM8KW-eg.png"
+    description: "Lasso regression: how its unique constraint shape brings sparsity by pushing coefficients to zero, simplifying models and fighting overfitting."
+
+
 ---
 
 **Hello! I’m Hoyath Ali**, a Master’s student in Computer Science at the [University of California, Riverside](https://www.ucr.edu/) 🎓, with over 3 years of experience in developing and deploying machine learning models. My work has spanned various domains, including optimizing operations and enhancing decision-making through data-driven solutions.
@@ -52,15 +61,16 @@ I specialize in building, fine-tuning, and deploying machine learning models, wi
   {% endfor %}
 </table>
 
+## Recent Blogs
 
 <div style="width:100%; display: flex; flex-direction: column;">
-  {% for update in page.news_and_updates %}
+  {% for update in page.blogs %}
   <div style="margin-bottom: 20px; border-bottom: 1px solid #ccc; padding: 10px 0;">
     <a href="{{ update.url }}" style="text-decoration: none; color: #000;">
       <div style="display: flex; align-items: center;">
         <img src="{{ update.logo }}" alt="{{ update.organization }}" style="width:100px; height:auto; margin-right: 20px;">
         <div>
-          <h3>{{ update.date }}: {{ update.organization }}</h3>
+          <h3>{{ update.date }}: {{ update.title }}</h3>
           <p>{{ update.description }}</p>
         </div>
       </div>
