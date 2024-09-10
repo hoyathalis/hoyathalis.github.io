@@ -9,10 +9,34 @@ redirect_from:
 
 {% include base_path %}
 
+<div style="position: absolute; top: 20px; right: 20px;">
+  <a href="{{ '/files/resume.pdf' | relative_url }}" target="_blank">
+    <img src="{{ '/path/to/pdf-icon.png' | relative_url }}" alt="View PDF" style="width: 40px; height: 40px;"/>
+  </a>
+</div>
+.pdf-link {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000; /* Ensures the link stays on top of other elements */
+}
+
+.pdf-link img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+<div class="pdf-link">
+  <a href="{{ '/files/resume.pdf' | relative_url }}" target="_blank">
+    <img src="{{ '/path/to/pdf-icon.png' | relative_url }}" alt="View PDF"/>
+  </a>
+</div>
+
+
 Education
 ======
-* M.S. in Computer Science, University Of California, Riverside, 2023 (expected)
-* B.S. in Computer Science, Lovely Professional Univesity, 2019
+* M.S. in Computer Science, University Of California, Riverside, 2024 (expected)
+* B.S. in Computer Science, Lovely Professional University, 2019
 
 Work experience
 ======
@@ -67,7 +91,7 @@ operational efficiency by accurately identifying fraud, automating case routing,
     * ECS
     * SageMaker
 
-
+<!--
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
@@ -89,3 +113,4 @@ Teaching
 Service and leadership
 ======
 * Currently signed in to 43 different slack teams
+-->
