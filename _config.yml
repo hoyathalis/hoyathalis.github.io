@@ -25,7 +25,7 @@ author:
   name             : "Hoyath Ali"
   pronouns         : # example: "she/her"  
   bio              : "Machine Learning Engineer"
-  employer         : "University Of California, Riverside"
+  employer         : <a href="https://www.ucr.edu/>"University Of California, Riverside"</a>
   uri              : # URL
   email            : "hoyathali@gmail.com" 
 

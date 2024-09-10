@@ -18,7 +18,7 @@ Currently, I’m focusing on leveraging my expertise to tackle complex problems 
   </tr>
   <tr>
     <td style="border: none;">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5G6V7WktZE2ATFZhEpXvzyiFY70CLzSPR2Q&s" alt="Bluevoir Technologies" style="width:150px; height:auto;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5G6V7WktZE2ATFZhEpXvzyiFY70CLzSPR2Q&s" alt="Bluevoir Technologies" style="width:500px; height:auto;">
     </td>
     <td style="border: none;">Joined Bluevoir Technologies in February 2023. Developed an ML-driven system with fine-tuned LLMs for real-time, context-aware clinical trial protocols. Reduced protocol creation time by 30% and enhanced protocol quality by 40%.</td>
   </tr>
@@ -30,7 +30,7 @@ Currently, I’m focusing on leveraging my expertise to tackle complex problems 
   </tr>
   <tr>
     <td style="border: none;">
-      <img src="https://www.pega.com/sites/default/files/styles/1024/public/media/images/2021-10/pega-logo-horiztonal-prevcard.png?itok=C5-EphPx" alt="Pegasystems" style="width:150px; height:auto;">
+      <img src="https://www.pega.com/sites/default/files/styles/1024/public/media/images/2021-10/pega-logo-horiztonal-prevcard.png?itok=C5-EphPx" alt="Pegasystems" style="width:500px; height:auto;">
     </td>
     <td style="border: none;">Resolved 20+ Sev1 issues in Pega, preventing up to 72 hours of potential downtime for clients like JP Morgan, Ford, Siemens, and PayPal. Avoided significant revenue losses by mitigating downtime.</td>
   </tr>
