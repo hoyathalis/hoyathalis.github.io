@@ -1,0 +1,13 @@
+- title: "Project Title 1"
+  date: "2023"
+  description: "A brief description of the first project."
+  github_link: "https://github.com/username/project1"
+  live_link: "https://live-demo.com/project1"
+  image: "/assets/images/project1.jpg"
+
+- title: "Project Title 2"
+  date: "2022"
+  description: "A brief description of the second project."
+  github_link: "https://github.com/username/project2"
+  live_link: "https://live-demo.com/project2"
+  image: "/assets/images/project2.jpg"

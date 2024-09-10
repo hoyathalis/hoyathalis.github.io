@@ -7,8 +7,69 @@ author_profile: true
 
 {% include base_path %}
 
-hdmi
-{% for post in site.projects %}
-  {% include archive-single.html %}
-{% endfor %}
+<div class="projects-container">
+  {% for project in site.data.projects %}
+    <div class="project-card">
+      <div class="project-content">
+        <h2>{{ project.title }}</h2>
+        <p><strong>Completed:</strong> {{ project.date }}</p>
+        <p>{{ project.description }}</p>
+        <div class="project-links">
+          <a href="{{ project.github_link }}" class="button">GitHub</a>
+          <a href="{{ project.live_link }}" class="button">Live Demo</a>
+        </div>
+      </div>
+      <div class="project-image">
+        <img src="{{ project.image }}" alt="{{ project.title }}">
+      </div>
+    </div>
+  {% endfor %}
+</div>
 
+<style>
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #f9f9f9;
+}
+
+.project-content {
+  flex: 1;
+}
+
+.project-content h2 {
+  margin-top: 0;
+}
+
+.project-links {
+  margin-top: 10px;
+}
+
+.project-links .button {
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: #0073e6;
+  color: white;
+  margin-right: 10px;
+}
+
+.project-image {
+  margin-left: 20px;
+}
+
+.project-image img {
+  max-width: 150px;
+  border-radius: 8px;
+}
+</style>
