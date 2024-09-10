@@ -11,35 +11,62 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* M.S. in Computer Science, University Of California, Riverside, 2023 (expected)
+* B.S. in Computer Science, Lovely Professional Univesity, 2019
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Bluevoir Technologies: Technical Solutions Engineer
+  * Duties included: Developed an ML-driven system with fine-tuned LLMs for real-time, context-aware clinical trial protocols, reducing
+protocol creation time by 30% and enhancing protocol quality by 40%.
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Goldman Sachs: Analyst
+  * Duties includes: Developed a machine learning fraud detection system for credit card transactions that enhanced financial security and
+operational efficiency by accurately identifying fraud, automating case routing, and triggering actions.
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Pega Systems: Technical Solutions Engineer
+  * Duties included: Addressed critical issues, preventing major downtime for key clients and avoiding significant revenue losses.
+
+
   
-Skills
+**Skills**
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* **Languages**
+  * Python
+  * JavaScript
+  * Java
+  * SQL/NoSQL
+  * HTML
+  * CSS
+
+* **Frameworks & Libraries**
+  * PyTorch
+  * Scikit-learn
+  * Transformers
+  * LangChain
+  * Docker
+  * Kubernetes
+  * FastAPI
+  * MLFlow
+  * SageMaker
+  * Optuna
+
+* **Domain Areas**
+  * Deep Learning
+  * Natural Language Processing
+  * Large Language Models (LLM)
+  * Computer Vision
+  * Diffusion Models
+
+* **Cloud Platforms**
+  * AWS
+    * EC2
+    * Fargate
+    * CloudWatch
+    * Lambda
+    * ECS
+    * SageMaker
+
 
 Publications
 ======
