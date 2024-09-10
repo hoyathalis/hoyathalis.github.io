@@ -20,3 +20,17 @@
     - DQN
     - SAC
     - Python
+
+
+- title: "Accelarating general-purpose applications using NN"
+  date: "March-2024"
+  description: "Parrot Transformation implements a neural network-based approach to accelerate general-purpose grayscale transformation functions. By replacing traditional methods with a neural network, the project achieves up to a 30% increase in inference speed using GPU and TPU accelerators. The model demonstrates high accuracy (90%) in emulating the original function, showcasing its effectiveness in diverse applications and emphasizing the practical benefits of hardware acceleration."
+  github_link: "https://github.com/hoyathali/ParrotTransformation"
+  image: "https://github.com/hoyathali/ParrotTransformation/raw/main/NNvsRegularFunction.png"
+  tags:
+    - Neural Networks
+    - GPU Acceleration
+    - Performance Optimization
+    - Python
+
+

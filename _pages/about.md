@@ -16,13 +16,13 @@ news_and_updates:
     organization: "Bluevoir Technologies"
     url: "https://bluevoir.com"
     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5G6V7WktZE2ATFZhEpXvzyiFY70CLzSPR2Q&s"
-    description: "Joined Bluevoir Technologies in February 2023. Developed an ML-driven system with fine-tuned LLMs for real-time, context-aware clinical trial protocols. Reduced protocol creation time by 30% and enhanced protocol quality by 40%."
+    description: "Joined Bluevoir Technologies as a Principal Engineer. Developed an ML-driven system with fine-tuned LLMs for real-time, context-aware clinical trial protocols. "
   
   - date: "Aug 2021"
     organization: "Goldman Sachs"
     url: "https://www.goldmansachs.com/"
     logo: "https://logowik.com/content/uploads/images/9675-goldman.webp"
-    description: "Joined Goldman Sachs as an analyst in August 2021. Developed a machine learning fraud detection system for credit card transactions, enhancing financial security and operational efficiency. Automated case routing and triggered actions, resulting in significant savings and a 25% reduction in costs."
+    description: "Joined Goldman Sachs as an analyst. Contributed to the development of a machine learning system aimed at improving fraud detection and streamlining operations in financial transactions."
   
   - date: "July 2019"
     organization: "Pegasystems"
