@@ -52,11 +52,10 @@ I specialize in building, fine-tuning, and deploying machine learning models, wi
   <tr>
     <td style="border: none;">
       <a href="{{ update.url }}">
-        <img src="{{ update.logo }}" alt="{{ update.organization }}" style="width:50px; height:auto;">
+        <img src="{{ update.logo }}" alt="{{ update.organization }}" style="width:150px; height:auto;">
       </a>
     </td>
-    <td>{{ update.date }}</td>
-    <td style="border: none;">{{ update.description }}</td>
+    <td style="border: none;"> {{ update.date }} -{{ update.description }}</td>
   </tr>
   {% endfor %}
 </table>
