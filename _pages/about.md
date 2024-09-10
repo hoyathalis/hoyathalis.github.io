@@ -37,6 +37,11 @@ blogs:
     logo: "https://miro.medium.com/v2/resize:fit:640/format:webp/1*1EfAhEVm8eW-tAgM8KW-eg.png"
     description: "Lasso regression: how its unique constraint shape brings sparsity by pushing coefficients to zero, simplifying models and fighting overfitting."
 
+  - date: ""
+    title: "ML4LM — RL — Making sense of Bellman EquationIntroduction"
+    url: "https://hoyath.medium.com/making-sense-of-bellman-equation-rl-ml4lm-cd0e6fcc2098"
+    logo: "https://miro.medium.com/v2/resize:fit:828/format:webp/1*LW-v8IKzwgIU-QKKaEfepw.png"
+    description: "Unpacking the Bellman equations and their role in Reinforcement Learning"
 
 ---
 
@@ -55,7 +60,7 @@ I specialize in building, fine-tuning, and deploying machine learning models, wi
         <img src="{{ update.logo }}" alt="{{ update.organization }}" style="width:150px; height:auto;">
       </a>
     </td>
-    <td style="border: none;"> {{ update.date }} -{{ update.description }}</td>
+    <td style="border: none;"> {{ update.date }} - {{ update.description }}</td>
   </tr>
   {% endfor %}
 </table>
