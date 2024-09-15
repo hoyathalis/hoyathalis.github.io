@@ -1,3 +1,53 @@
+<script>
+  document.addEventListener('DOMContentLoaded', async () => {
+  const userid = 'visitor';  
+  const level = 'info';      
+
+  const logSheetUrl = 'https://log-api.newrelic.com/log/v1?Api-Key=5229e7f7b5ce83cbdaec27036f5e52f5FFFFNRAL';
+
+  const logEntry = [{
+    "common": {
+      "attributes": {
+        "logtype": "portfolio-logs",
+        "service": "portfolio-service",
+        "hostname": window.location.hostname  // Dynamic hostname
+      }
+    },
+    "logs": [{
+      "timestamp": new Date().toISOString(),
+      "message": `User '${userid}' visited the portfolio`,
+      "attributes": {
+        "level": level,
+        "userid": userid,
+        "page": window.location.href  // Current page URL
+      }
+    }]
+  }];
+
+  try {
+    const response = await fetch(logSheetUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(logEntry)
+    });
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    const data = await response.json();
+    // Optionally log success
+    console.log('Data posted successfully:', data);
+  } catch (error) {
+    console.error('Error posting the log', error);
+  }
+});
+
+  </script>
+
+
 {% if site.comments.provider and page.comments %}
 
 {% case site.comments.provider %}
