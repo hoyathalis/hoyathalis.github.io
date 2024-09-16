@@ -6,6 +6,12 @@ redirect_from:
   - /about/
   - /about.html
 news_and_updates:
+  - date: "Sep 2024"
+    organization: "Revent Solutions, Ashburn"
+    url: "https://reventsolutions.com/"
+    logo: "https://cdn.cmsfly.com/6601ca74197a880013d1b524/revent-solutions-logos-2-PD5-zQ.png"
+    description: "Joined Revent Solutions as a Machine Learning Engineer Intern, focusing on building large-scale recommendation systems to enhance user experiences"
+
   - date: "Sep 2023"
     organization: "University Of California, Riverside"
     url: "https://ucr.edu"
