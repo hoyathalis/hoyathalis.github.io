@@ -32,6 +32,12 @@ news_and_updates:
 
 blogs:
   - date: ""
+    title: "ML4LM-Content Based Recommendation Systems"
+    url: "https://hoyath.medium.com/ml4lm-content-based-recommendation-systems-859c1c601ea1"
+    logo: "https://miro.medium.com/v2/resize:fit:640/format:webp/1*rJVUd9vrk527wbcefVJAJw.png"
+    description: "Explored content-based recommendation systems and demonstrated how embeddings and cosine similarity can be used to deliver personalized content recommendations."
+
+  - date: ""
     title: "ML4LM- How does Lasso bring sparsity?"
     url: "https://hoyath.medium.com/ml4lm-how-does-lasso-bring-sparsity-29f3efe31ab3"
     logo: "https://miro.medium.com/v2/resize:fit:640/format:webp/1*1EfAhEVm8eW-tAgM8KW-eg.png"
