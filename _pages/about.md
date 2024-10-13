@@ -65,9 +65,6 @@ blogs:
 
 🌟 I am a **Machine Learning Engineer** with 3 years of experience specializing in large-scale **recommendation systems**. Currently interning at **Revent Solutions**, I have developed hybrid recommendation systems that boosted user engagement by **30%** and fine-tuned large language models to automate clinical trial protocols, significantly enhancing efficiency. Additionally, I created anomaly detection systems that prevented monthly write-offs of **$2-3 million**, showcasing my ability to deliver impactful solutions.
 
-### Technical Skills
-My technical expertise includes programming languages and frameworks such as Python, JavaScript, Java, SQL/NoSQL, HTML, CSS, PyTorch, TensorFlow, and Scikit-learn. I am proficient in cloud and containerization technologies like AWS, SageMaker, Oracle Cloud, Docker, and Kubernetes. My machine learning capabilities cover supervised and unsupervised learning, deep learning, natural language processing (NLP), large language models (LLM), recommendation systems, computer vision, and anomaly detection.
-
 Currently pursuing my **Master’s in Computer Science** at the [University of California, Riverside](https://www.ucr.edu/) 🎓, I am researching **Generative Adversarial Networks (GANs)** and **Variational Autoencoders (VAEs)** to enhance model generalization. I am eager to apply my advanced ML techniques to solve real-world problems, and I'm open to collaborations and opportunities. 
 
 ---
