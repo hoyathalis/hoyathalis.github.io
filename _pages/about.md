@@ -62,29 +62,13 @@ blogs:
 
 # Hoyath - Machine Learning Engineer
 
-🌟 **Driven Machine Learning Engineer** with 3 years of experience specializing in building large-scale, end-to-end **recommendation systems**. Currently interning at **Revent Solutions**, I leverage my expertise to create solutions that make a difference.
 
----
+🌟 I am a **Machine Learning Engineer** with 3 years of experience specializing in large-scale **recommendation systems**. Currently interning at **Revent Solutions**, I have developed hybrid recommendation systems that boosted user engagement by **30%** and fine-tuned large language models to automate clinical trial protocols, significantly enhancing efficiency. Additionally, I created anomaly detection systems that prevented monthly write-offs of **$2-3 million**, showcasing my ability to deliver impactful solutions.
 
-### Key Achievements:
+### Technical Skills
+My technical expertise includes programming languages and frameworks such as Python, JavaScript, Java, SQL/NoSQL, HTML, CSS, PyTorch, TensorFlow, and Scikit-learn. I am proficient in cloud and containerization technologies like AWS, SageMaker, Oracle Cloud, Docker, and Kubernetes. My machine learning capabilities cover supervised and unsupervised learning, deep learning, natural language processing (NLP), large language models (LLM), recommendation systems, computer vision, and anomaly detection.
 
-- **Increased User Engagement:** Developed **hybrid recommendation systems** that drove a **30% boost** in user engagement.
-- **Innovative Automation:** Fine-tuned domain-specific **large language models** that automated clinical trial protocols, streamlining processes for medical writers.
-- **Significant Cost Savings:** Created **anomaly detection systems** that successfully prevented monthly write-offs ranging from **$2-3 million**, showcasing my ability to deliver financial impact.
-
----
-
-### Technical Expertise:
-
-- **Programming Languages & Frameworks:** Python, JavaScript, Java, SQL/NoSQL, HTML, CSS, PyTorch, TensorFlow, Scikit-learn, Hugging Face, Pandas
-- **Cloud & Containerization:** AWS, SageMaker, Oracle Cloud, Docker, Kubernetes
-- **Machine Learning Areas:** Supervised and Unsupervised Learning, Deep Learning, Natural Language Processing (NLP), Large Language Models (LLM), Recommendation Systems, Computer Vision, Anomaly Detection
-
----
-
-### Academic Background:
-
-Currently pursuing a **Master’s in Computer Science** at the [University of California, Riverside](https://www.ucr.edu/) 🎓. My research focuses on **Generative Adversarial Networks (GANs)** and **Variational Autoencoders (VAEs)** to enhance model generalization, equipping me with cutting-edge knowledge in the field.
+Currently pursuing my **Master’s in Computer Science** at the [University of California, Riverside](https://www.ucr.edu/) 🎓, I am researching **Generative Adversarial Networks (GANs)** and **Variational Autoencoders (VAEs)** to enhance model generalization. I am eager to apply my advanced ML techniques to solve real-world problems, and I'm open to collaborations and opportunities. 
 
 ---
 
