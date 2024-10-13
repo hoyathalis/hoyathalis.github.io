@@ -10,7 +10,7 @@ news_and_updates:
     organization: "Revent Solutions, Ashburn"
     url: "https://reventsolutions.com/"
     logo: "https://cdn.cmsfly.com/6601ca74197a880013d1b524/revent-solutions-logos-2-PD5-zQ.png"
-    description: "Joined Revent Solutions as a Machine Learning Engineer Intern, focusing on building large-scale recommendation systems to enhance user experiences"
+    description: "Joined Revent Solutions as a Machine Learning Engineer Intern, where I developed and deployed a hybrid recommendation system that increased user engagement by 30% and article click-through rates by 25%, while handling the entire project lifecycle from data scraping to scalable deployment on Oracle Cloud."
 
   - date: "Sep 2023"
     organization: "University Of California, Riverside"
@@ -22,13 +22,13 @@ news_and_updates:
     organization: "Bluevoir Technologies"
     url: "https://bluevoir.com"
     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5G6V7WktZE2ATFZhEpXvzyiFY70CLzSPR2Q&s"
-    description: "Joined Bluevoir Technologies as a Principal Engineer. Developed an ML-driven system with fine-tuned LLMs for real-time, context-aware clinical trial protocols. "
+    description: "Joined Bluevoir Technologies as a Principal Engineer, where I fine-tuned domain-specific LLMs to automate clinical trial protocol generation, reducing creation time by 30% and improving protocol accuracy by 40%. "
   
   - date: "Aug 2021"
     organization: "Goldman Sachs"
     url: "https://www.goldmansachs.com/"
     logo: "https://logowik.com/content/uploads/images/9675-goldman.webp"
-    description: "Joined Goldman Sachs as an analyst. Contributed to the development of a machine learning system aimed at improving fraud detection and streamlining operations in financial transactions."
+    description: "Joined Goldman Sachs as an analysts, where I developed an anomaly detection system that prevented $2-3 million in monthly losses by identifying fraudulent Apple Card transactions, and automated the dispute case process, reducing processing time by 40%."
   
   - date: "July 2019"
     organization: "Pegasystems"
