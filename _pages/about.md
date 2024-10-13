@@ -56,10 +56,16 @@ blogs:
     description: "Unpacking the Bellman equations and their role in Reinforcement Learning"
 
 ---
+<!-- 
+**Hello! I’m Hoyath Ali**, a Master’s student in Computer Science at the [University of California, Riverside](https://www.ucr.edu/) 🎓, with over 3 years of experience in developing and deploying machine learning models. My work has spanned various domains, including optimizing operations and enhancing decision-making through data-driven solutions. -->
 
-**Hello! I’m Hoyath Ali**, a Master’s student in Computer Science at the [University of California, Riverside](https://www.ucr.edu/) 🎓, with over 3 years of experience in developing and deploying machine learning models. My work has spanned various domains, including optimizing operations and enhancing decision-making through data-driven solutions.
 
-I specialize in building, fine-tuning, and deploying machine learning models, with a deep understanding of natural language processing (NLP), deep learning architectures, and real-time model monitoring. My expertise includes working with large language models (LLMs), optimizing algorithms for efficiency, and implementing scalable ML solutions using frameworks like [PyTorch](https://pytorch.org/), [Scikit-learn](https://scikit-learn.org/), and [Transformers](https://huggingface.co/transformers/). Additionally, I have hands-on experience deploying models in cloud environments with [AWS](https://aws.amazon.com/), [Docker](https://www.docker.com/), and [Kubernetes](https://kubernetes.io/), ensuring robust, production-grade performance.
+I'm a Machine Learning Engineer with 3 years of experience currently interning at Revent Solutions, where I focus on building large-scale end-to-end recommendation systems. My professional journey includes developing hybrid recommendation systems that increased user engagement by 30%, fine-tuning domain-specific large language models to automate clinical trial protocols, and creating anomaly detection systems that prevented monthly write-offs of $2-3 million. These experiences have honed my ability to apply advanced ML techniques to deliver impactful solutions across various industries.
+
+
+My technical skill set encompasses Python, JavaScript, TensorFlow, PyTorch, and Scikit-learn, along with cloud technologies like AWS and Oracle Cloud. I am proficient in deploying scalable solutions using Docker and Kubernetes and have expertise in natural language processing, deep learning, and computer vision. Currently, I am pursuing my Master’s in Computer Science at the [University of California, Riverside](https://www.ucr.edu/) 🎓, where I am researching Generative Adversarial Networks (GANs) and Variational Autoencoders (VAEs) to enhance model generalization.
+
+<!-- I specialize in building, fine-tuning, and deploying machine learning models, with a deep understanding of natural language processing (NLP), deep learning architectures, and real-time model monitoring. My expertise includes working with large language models (LLMs), optimizing algorithms for efficiency, and implementing scalable ML solutions using frameworks like [PyTorch](https://pytorch.org/), [Scikit-learn](https://scikit-learn.org/), and [Transformers](https://huggingface.co/transformers/). Additionally, I have hands-on experience deploying models in cloud environments with [AWS](https://aws.amazon.com/), [Docker](https://www.docker.com/), and [Kubernetes](https://kubernetes.io/), ensuring robust, production-grade performance. -->
 
 
 ## News and Updates
