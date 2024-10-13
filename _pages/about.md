@@ -67,10 +67,6 @@ blogs:
 
 Currently pursuing my **Master’s in Computer Science** at the [University of California, Riverside](https://www.ucr.edu/) 🎓, I am researching **GAN's** and **VAEs** to enhance model generalization. I am eager to apply my advanced ML techniques to solve real-world problems, and I'm open to collaborations and opportunities. 
 
----
-
-👋 Let's connect! I am passionate about applying advanced ML techniques to solve real-world problems. Feel free to reach out for collaborations or opportunities.
-
 <!-- 
 I'm a Machine Learning Engineer with 3 years of experience currently interning at Revent Solutions, where I focus on building large-scale end-to-end recommendation systems. My professional journey includes developing hybrid recommendation systems that increased user engagement by 30%, fine-tuning domain-specific large language models to automate clinical trial protocols, and creating anomaly detection systems that prevented monthly write-offs of $2-3 million. These experiences have honed my ability to apply advanced ML techniques to deliver impactful solutions across various industries.
 
