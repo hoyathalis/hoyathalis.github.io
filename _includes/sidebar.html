@@ -17,16 +17,7 @@
       {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
       {% if s.text %}{{ s.text | markdownify }}{% endif %}
     
-    <!-- Skills Section -->
-    <div class="skills">
-      <h3>My Skills</h3>
-      <ul>
-        <li style="color: #4CAF50;"><strong>Programming Languages & Frameworks:</strong> Python, JavaScript, Java, SQL/NoSQL, HTML, CSS, PyTorch, TensorFlow, Scikit-learn, Hugging Face, Pandas</li>
-        <li style="color: #2196F3;"><strong>Cloud & Containerization:</strong> AWS, SageMaker, Oracle Cloud, Docker, Kubernetes</li>
-        <li style="color: #FF9800;"><strong>Machine Learning Areas:</strong> Supervised and Unsupervised Learning, Deep Learning, Natural Language Processing (NLP), Large Language Models (LLM), Recommendation Systems, Computer Vision, Anomaly Detection</li>
-      </ul>
-    </div>
-    <!-- End of Skills Section -->
+
      
     {% endfor %}
     {% if page.sidebar.nav %}
