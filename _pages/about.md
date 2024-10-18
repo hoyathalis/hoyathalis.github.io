@@ -28,7 +28,7 @@ news_and_updates:
     organization: "Goldman Sachs"
     url: "https://www.goldmansachs.com/"
     logo: "https://logowik.com/content/uploads/images/9675-goldman.webp"
-    description: "Joined Goldman Sachs as an analysts, where I developed an anomaly detection system that prevented $2-3 million in monthly losses by identifying fraudulent Apple Card transactions, and automated the dispute case process, reducing processing time by 40%."
+    description: "Joined Goldman Sachs as an analysts, where I developed an anomaly detection system that prevented $1-2 million in monthly losses by identifying fraudulent Apple Card transactions, and automated the dispute case process, reducing processing time by 40%."
   
   - date: "July 2019"
     organization: "Pegasystems"
@@ -59,7 +59,7 @@ blogs:
 
 
 
-I am a Machine Learning Engineer with 3 years of experience specializing in machine learning solutions. Currently interning at Revent Solutions, I have developed hybrid recommendation systems that boosted user engagement by 30% and fine-tuned large language models to automate clinical trial protocols, significantly enhancing efficiency. Additionally, I created anomaly detection systems that prevented monthly write-offs of $2-3 million, showcasing my ability to deliver impactful solutions.
+I am a Machine Learning Engineer with 3 years of experience specializing in machine learning solutions. Currently interning at Revent Solutions, I have developed hybrid recommendation systems that boosted user engagement by 30% and fine-tuned large language models to automate clinical trial protocols, significantly enhancing efficiency. Additionally, I created anomaly detection systems that prevented monthly write-offs of $1-2 million, showcasing my ability to deliver impactful solutions.
 
 Currently pursuing my Master’s in Computer Science at the [University of California, Riverside](https://www.ucr.edu/) 🎓, I am researching GAN's and VAEs to enhance model generalization. I am eager to apply my advanced ML techniques to solve real-world problems, and I'm open to collaborations and opportunities. 
 
