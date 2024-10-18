@@ -5,12 +5,33 @@
 
   const logSheetUrl = 'https://log-api.newrelic.com/log/v1?Api-Key=5229e7f7b5ce83cbdaec27036f5e52f5FFFFNRAL';
 
-  const logEntry = [{
+
+
+// Function to get IP-based location info
+async function getVisitorLocation() {
+  try {
+    const response = await fetch('https://ipinfo.io/json');
+    if (!response.ok) {
+      throw new Error('Failed to fetch IP geolocation data');
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Error fetching IP geolocation:', error);
+    return null;
+  }
+}
+
+
+// Log entry with geolocation
+async function logPortfolioVisit(userid, level) {
+  const locationInfo = await getVisitorLocation();
+  const logEntry = {
     "common": {
       "attributes": {
         "logtype": "portfolio-logs",
         "service": "portfolio-service",
-        "hostname": window.location.hostname  // Dynamic hostname
+        "hostname": window.location.hostname
       }
     },
     "logs": [{
@@ -19,31 +40,31 @@
       "attributes": {
         "level": level,
         "userid": userid,
-        "page": window.location.href  // Current page URL
+        "page": window.location.href,
+        "location": locationInfo // Include location info here
       }
     }]
-  }];
+  };
 
-  try {
+
+   // Send log entry to New Relic or other logging service
+   try {
     const response = await fetch(logSheetUrl, {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/json'
       },
       body: JSON.stringify(logEntry)
     });
-
     if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
+      throw new Error('Failed to log portfolio visit');
     }
-
-    const data = await response.json();
-    // Optionally log success
-    console.log('Data posted successfully:', data);
+    console.log('Portfolio visit logged successfully');
   } catch (error) {
-    console.error('Error posting the log', error);
+    console.error('Error logging portfolio visit:', error);
   }
-});
+}
+
 
   </script>
 
