@@ -5,14 +5,18 @@
 
     const logSheetUrl = 'https://log-api.newrelic.com/log/v1?Api-Key=5229e7f7b5ce83cbdaec27036f5e52f5FFFFNRAL';
 
+    console.log("DOM fully loaded. Starting log process...");
+
     // Function to get IP-based location info
     async function getVisitorLocation() {
+      console.log("Fetching visitor location...");
       try {
         const response = await fetch('https://ipinfo.io/json');
         if (!response.ok) {
           throw new Error('Failed to fetch IP geolocation data');
         }
         const data = await response.json();
+        console.log("Visitor location data fetched successfully:", data);
         return data;
       } catch (error) {
         console.error('Error fetching IP geolocation:', error);
@@ -22,6 +26,7 @@
 
     // Log entry with geolocation
     async function logPortfolioVisit(userid, level) {
+      console.log(`Logging portfolio visit for user: ${userid}...`);
       const locationInfo = await getVisitorLocation();
       const logEntry = {
         "common": {
@@ -42,6 +47,8 @@
           }
         }]
       };
+
+      console.log("Log entry prepared:", logEntry);
 
       // Send log entry to New Relic or other logging service
       try {
