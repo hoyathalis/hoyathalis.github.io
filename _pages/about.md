@@ -59,9 +59,10 @@ blogs:
 
 
 
-I am a Machine Learning Engineer with 3 years of experience specializing in machine learning solutions. Currently interning at Revent Solutions, I have developed hybrid recommendation systems that boosted user engagement by 30% and fine-tuned large language models to automate clinical trial protocols, significantly enhancing efficiency. Additionally, I created anomaly detection systems that prevented monthly write-offs of $1-2 million, showcasing my ability to deliver impactful solutions.
+I am a Machine Learning Engineer with 3 years of experience specializing in machine learning solutions. Currently interning at [Revent Solutions](https://reventsolutions.com/), I developed hybrid recommendation systems that boosted user engagement by 30%. My previous experience includes fine-tuning large language models at [Bluevoir](https://bluevoir.com/) to automate clinical trial protocols, significantly enhancing efficiency, and creating anomaly detection systems at [Goldman Sachs](https://www.goldmansachs.com/) that prevented monthly write-offs of $1-2 million, demonstrating my ability to deliver impactful solutions.
 
-Currently pursuing my Master’s in Computer Science at the [University of California, Riverside](https://www.ucr.edu/) 🎓, I am researching GAN's and VAEs to enhance model generalization. I am eager to apply my advanced ML techniques to solve real-world problems, and I'm open to collaborations and opportunities. 
+
+Currently pursuing my Master’s in Computer Science at the [University of California, Riverside](https://www.ucr.edu/) 🎓, I am eager to apply my advanced ML techniques to solve real-world problems, and I'm open to collaborations and opportunities. 
 
 <div class="skills-container" style="display: flex; flex-wrap: wrap; gap: 5px; font-size: 14px;">
     <!-- Programming Languages & Frameworks -->

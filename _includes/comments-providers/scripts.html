@@ -20,38 +20,38 @@
         return data;
       } catch (error) {
         console.error('Error fetching IP geolocation:', error);
-        return null;
+        return null;  // Return null to handle gracefully if there's an error
       }
     }
 
     // Log entry with geolocation
     async function logPortfolioVisit(userid, level) {
-      console.log(`Logging portfolio visit for user: ${userid}...`);
-      const locationInfo = await getVisitorLocation();
-      const logEntry = {
-        "common": {
-          "attributes": {
-            "logtype": "portfolio-logs",
-            "service": "portfolio-service",
-            "hostname": window.location.hostname
-          }
-        },
-        "logs": [{
-          "timestamp": new Date().toISOString(),
-          "message": `User '${userid}' visited the portfolio`,
-          "attributes": {
-            "level": level,
-            "userid": userid,
-            "page": window.location.href,
-            "location": locationInfo // Include location info here
-          }
-        }]
-      };
-
-      console.log("Log entry prepared:", logEntry);
-
-      // Send log entry to New Relic or other logging service
       try {
+        console.log(`Logging portfolio visit for user: ${userid}...`);
+        const locationInfo = await getVisitorLocation();
+        const logEntry = {
+          "common": {
+            "attributes": {
+              "logtype": "portfolio-logs",
+              "service": "portfolio-service",
+              "hostname": window.location.hostname
+            }
+          },
+          "logs": [{
+            "timestamp": new Date().toISOString(),
+            "message": `User '${userid}' visited the portfolio`,
+            "attributes": {
+              "level": level,
+              "userid": userid,
+              "page": window.location.href,
+              "location": locationInfo // Include location info here
+            }
+          }]
+        };
+
+        console.log("Log entry prepared:", logEntry);
+
+        // Send log entry to New Relic or other logging service
         const response = await fetch(logSheetUrl, {
           method: 'POST',
           headers: {
