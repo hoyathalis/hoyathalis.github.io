@@ -37,6 +37,13 @@ news_and_updates:
     description: "Joined Pegasystems in July 2019. Addressed critical issues, preventing major downtime for key clients and avoiding significant revenue losses."
 
 blogs:
+
+  - date: ""
+    title: "ML4LM — Mastering Anomaly Detection in Production: When to use and when not to use"
+    url: "https://hoyath.medium.com/ml4lm-isolationforest-270d3b2247d0"
+    logo: "https://miro.medium.com/v2/resize:fit:828/format:webp/1*zPa8NuCMM49aGxtpvIsFQA.png"
+    description: "Discover when to use Isolation Forests for anomaly detection in production and why it may not be suitable for all scenarios."
+
   - date: ""
     title: "ML4LM-Content Based Recommendation Systems"
     url: "https://hoyath.medium.com/ml4lm-content-based-recommendation-systems-859c1c601ea1"
