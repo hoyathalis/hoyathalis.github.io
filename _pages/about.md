@@ -79,26 +79,43 @@ I am a Machine Learning Engineer with around 4 years of experience specializing 
 Currently pursuing my Master’s in Computer Science at the [University of California, Riverside](https://www.ucr.edu/) 🎓, I am eager to apply my advanced ML techniques to solve real-world problems, and I'm open to collaborations and opportunities. 
 
 <div class="skills-container" style="display: flex; flex-wrap: wrap; gap: 5px; font-size: 14px;">
-    <!-- Programming Languages & Frameworks -->
+    <!-- Core Programming Languages -->
     <span class="skill-tag" style="background-color: #e0f7fa; padding: 5px 10px; border-radius: 5px;">Python</span>
+    <span class="skill-tag" style="background-color: #e0f7fa; padding: 5px 10px; border-radius: 5px;">C++</span>
+    <span class="skill-tag" style="background-color: #e0f7fa; padding: 5px 10px; border-radius: 5px;">SQL</span>
     <span class="skill-tag" style="background-color: #e0f7fa; padding: 5px 10px; border-radius: 5px;">JavaScript</span>
-    <span class="skill-tag" style="background-color: #e0f7fa; padding: 5px 10px; border-radius: 5px;">Java</span>
-    <span class="skill-tag" style="background-color: #e0f7fa; padding: 5px 10px; border-radius: 5px;">SQL/NoSQL</span>
-    <span class="skill-tag" style="background-color: #e0f7fa; padding: 5px 10px; border-radius: 5px;">HTML</span>
-    <span class="skill-tag" style="background-color: #e0f7fa; padding: 5px 10px; border-radius: 5px;">CSS</span>
-    <span class="skill-tag" style="background-color: #fff3e0; padding: 5px 10px; border-radius: 5px;">AWS</span>
-    <span class="skill-tag" style="background-color: #fff3e0; padding: 5px 10px; border-radius: 5px;">SageMaker</span>
-    <span class="skill-tag" style="background-color: #fff3e0; padding: 5px 10px; border-radius: 5px;">Oracle Cloud</span>
-    <span class="skill-tag" style="background-color: #fff3e0; padding: 5px 10px; border-radius: 5px;">Docker</span>
-    <span class="skill-tag" style="background-color: #fff3e0; padding: 5px 10px; border-radius: 5px;">Kubernetes</span>
-    <span class="skill-tag" style="background-color: #e8f5e9; padding: 5px 10px; border-radius: 5px;">Supervised Learning</span>
-    <span class="skill-tag" style="background-color: #e8f5e9; padding: 5px 10px; border-radius: 5px;">Unsupervised Learning</span>
-    <span class="skill-tag" style="background-color: #e8f5e9; padding: 5px 10px; border-radius: 5px;">Deep Learning</span>
-    <span class="skill-tag" style="background-color: #e8f5e9; padding: 5px 10px; border-radius: 5px;">Natural Language Processing (NLP)</span>
-    <span class="skill-tag" style="background-color: #e8f5e9; padding: 5px 10px; border-radius: 5px;">Large Language Models (LLM)</span>
-    <span class="skill-tag" style="background-color: #e8f5e9; padding: 5px 10px; border-radius: 5px;">Recommendation Systems</span>
-    <span class="skill-tag" style="background-color: #e8f5e9; padding: 5px 10px; border-radius: 5px;">Computer Vision</span>
-    <span class="skill-tag" style="background-color: #e8f5e9; padding: 5px 10px; border-radius: 5px;">Anomaly Detection</span>
+    
+    <!-- ML/AI Frameworks & Libraries -->
+    <span class="skill-tag" style="background-color: #fff3e0; padding: 5px 10px; border-radius: 5px;">PyTorch</span>
+    <span class="skill-tag" style="background-color: #fff3e0; padding: 5px 10px; border-radius: 5px;">TensorFlow Lite</span>
+    <span class="skill-tag" style="background-color: #fff3e0; padding: 5px 10px; border-radius: 5px;">torch.compile</span>
+    <span class="skill-tag" style="background-color: #fff3e0; padding: 5px 10px; border-radius: 5px;">Triton</span>
+    <span class="skill-tag" style="background-color: #fff3e0; padding: 5px 10px; border-radius: 5px;">CUDA</span>
+    <span class="skill-tag" style="background-color: #fff3e0; padding: 5px 10px; border-radius: 5px;">Scikit-learn</span>
+    <span class="skill-tag" style="background-color: #fff3e0; padding: 5px 10px; border-radius: 5px;">NumPy</span>
+    <span class="skill-tag" style="background-color: #fff3e0; padding: 5px 10px; border-radius: 5px;">Pandas</span>
+    
+    <!-- Edge Computing & Optimization -->
+    <span class="skill-tag" style="background-color: #e8f5e9; padding: 5px 10px; border-radius: 5px;">Model Quantization (QAT/PTQ)</span>
+    <span class="skill-tag" style="background-color: #e8f5e9; padding: 5px 10px; border-radius: 5px;">Edge Deployment</span>
+    <span class="skill-tag" style="background-color: #e8f5e9; padding: 5px 10px; border-radius: 5px;">Performance Optimization</span>
+    <span class="skill-tag" style="background-color: #e8f5e9; padding: 5px 10px; border-radius: 5px;">Model Profiling</span>
+    <span class="skill-tag" style="background-color: #e8f5e9; padding: 5px 10px; border-radius: 5px;">Knowledge Distillation</span>
+    <span class="skill-tag" style="background-color: #e8f5e9; padding: 5px 10px; border-radius: 5px;">LoRA Fine-tuning</span>
+    
+    <!-- Advanced ML Techniques -->
+    <span class="skill-tag" style="background-color: #f3e5f5; padding: 5px 10px; border-radius: 5px;">Large Language Models (LLM)</span>
+    <span class="skill-tag" style="background-color: #f3e5f5; padding: 5px 10px; border-radius: 5px;">Deep Learning</span>
+    <span class="skill-tag" style="background-color: #f3e5f5; padding: 5px 10px; border-radius: 5px;">Anomaly Detection</span>
+    <span class="skill-tag" style="background-color: #f3e5f5; padding: 5px 10px; border-radius: 5px;">Computer Vision</span>
+    <span class="skill-tag" style="background-color: #f3e5f5; padding: 5px 10px; border-radius: 5px;">Recommendation Systems</span>
+    <span class="skill-tag" style="background-color: #f3e5f5; padding: 5px 10px; border-radius: 5px;">Reinforcement Learning</span>
+    
+    <!-- Cloud & Infrastructure -->
+    <span class="skill-tag" style="background-color: #e1f5fe; padding: 5px 10px; border-radius: 5px;">AWS</span>
+    <span class="skill-tag" style="background-color: #e1f5fe; padding: 5px 10px; border-radius: 5px;">Docker</span>
+    <span class="skill-tag" style="background-color: #e1f5fe; padding: 5px 10px; border-radius: 5px;">Kubernetes</span>
+    <span class="skill-tag" style="background-color: #e1f5fe; padding: 5px 10px; border-radius: 5px;">MLOps</span>
 </div>
 
 
