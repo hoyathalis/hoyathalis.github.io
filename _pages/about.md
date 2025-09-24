@@ -9,7 +9,7 @@ news_and_updates:
   - date: "Feb 2025"
     organization: "Axiado Corporation"
     url: "https://axiado.com/"
-    logo: "https://www.google.com/url?sa=i&url=https%3A%2F%2Faxiado.com%2F&psig=AOvVaw2lroOsn3U-QwHPK60zDZMl&ust=1758765614514000&source=images&cd=vfe&opi=89978449&ved=0CBYQjRxqFwoTCLCqkc-m8I8DFQAAAAAdAAAAABAL"
+    logo: "https://axiado.com/wp-content/uploads/2023/05/Axiado_Corporation-Logo.png"
     description: "Joined Axiado Corporation as a Machine Learning Engineer (Full-time) in Feb 2025 (San Jose, CA, On-site). Designed and deployed machine learning models on edge devices using TensorFlow Lite for efficient real-time inference. Implemented quantization-aware training (QAT) and post-training quantization (PTQ) to optimize models for edge deployment. Performed model profiling and performance optimization to ensure low-latency and resource-efficient execution."
 
   - date: "Sep 2023"
@@ -38,29 +38,95 @@ news_and_updates:
 
 blogs:
 
-  - date: ""
-    title: "ML4LM — Mastering Anomaly Detection in Production: When to use and when not to use"
+  - date: "Sep 11, 2025"
+    title: "ML4LM — Profiling torch.compile on DenseNet-121 Inference (GTX 1650)"
+    url: "https://hoyath.medium.com/ml4lm-profiling-torch-compile-on-densenet-121-inference-gtx-1650-6984605dcff5"
+    logo: "https://miro.medium.com/v2/resize:fit:88/format:webp/1*lsHrV5x9cv6Zsl9jhWYOBA.png"
+    description: "Deep dive into profiling torch.compile performance on DenseNet-121 inference using GTX 1650, exploring optimization techniques and performance metrics."
+
+  - date: "Aug 24, 2025"
+    title: "ML4LM — Guards vs Graph Breaks in PyTorch: What You Need to Know"
+    url: "https://hoyath.medium.com/ml4lm-guards-vs-graph-breaks-in-pytorch-what-you-need-to-know-2ea9337c3803"
+    logo: "https://miro.medium.com/v2/resize:fit:88/format:webp/1*Dw5l_j-Zuedv58_QN_xRag.png"
+    description: "Understanding the differences between guards and graph breaks in PyTorch's compilation system and their impact on model performance."
+
+  - date: "Aug 23, 2025"
+    title: "ML4LM — A tiny Triton primer (toy example)"
+    url: "https://hoyath.medium.com/ml4lm-a-tiny-triton-primer-toy-example-e8a4bd71ec8c"
+    logo: "https://miro.medium.com/v2/resize:fit:88/format:webp/1*nU7P4P4sBYY-I855_9JPAg.png"
+    description: "A beginner-friendly introduction to Triton with practical examples and toy implementations to get started with GPU kernel programming."
+
+  - date: "Aug 17, 2025"
+    title: "ML4LM — PyTorch — What Not to Do in PyTorch Models for Better Performance (dynamo)"
+    url: "https://hoyath.medium.com/ml4lm-pytorch-what-not-to-do-in-pytorch-models-for-better-performance-dynamo-2e5c675dbec2"
+    logo: "https://miro.medium.com/v2/resize:fit:88/format:webp/1*OImLo4WeR5PcFdTaXidWdw.png"
+    description: "Common pitfalls and anti-patterns in PyTorch model development that can hurt performance, especially with Dynamo compilation."
+
+  - date: "Jan 24, 2025"
+    title: "Knowledge Distillation at a Low Level"
+    url: "https://hoyath.medium.com/knowledge-distillation-at-a-low-level-61ad2e5fbf99"
+    logo: "https://miro.medium.com/v2/resize:fit:88/format:webp/1*n4sy7MUiAiSoPPOuTmNlQg.jpeg"
+    description: "Exploring knowledge distillation techniques from a low-level implementation perspective, understanding how knowledge transfer works under the hood."
+
+  - date: "Nov 15, 2024"
+    title: "ML4LM — Fine-Tune Smarter, Not Harder: Discover LoRA for LLMs"
+    url: "https://hoyath.medium.com/ml4lm-fine-tune-smarter-not-harder-discover-lora-for-llms-24c59853a0f2"
+    logo: "https://miro.medium.com/v2/resize:fit:88/format:webp/1*KCXhOBh0RfM8QcZKB2hrPg.png"
+    description: "Introduction to Low-Rank Adaptation (LoRA) for efficient fine-tuning of Large Language Models, reducing computational requirements while maintaining performance."
+
+  - date: "Nov 6, 2024"
+    title: "ML4LM — Mastering Anomaly Detection in Production: When to use and when not to use"
     url: "https://hoyath.medium.com/ml4lm-isolationforest-270d3b2247d0"
     logo: "https://miro.medium.com/v2/resize:fit:828/format:webp/1*zPa8NuCMM49aGxtpvIsFQA.png"
     description: "Discover when to use Isolation Forests for anomaly detection in production and why it may not be suitable for all scenarios."
 
-  - date: ""
+  - date: "Sep 16, 2024"
     title: "ML4LM-Content Based Recommendation Systems"
     url: "https://hoyath.medium.com/ml4lm-content-based-recommendation-systems-859c1c601ea1"
     logo: "https://miro.medium.com/v2/resize:fit:640/format:webp/1*rJVUd9vrk527wbcefVJAJw.png"
     description: "Explored content-based recommendation systems and demonstrated how embeddings and cosine similarity can be used to deliver personalized content recommendations."
 
-  - date: ""
+  - date: "Apr 15, 2024"
+    title: "ML4LM — RL — Making sense of Bellman Equation"
+    url: "https://hoyath.medium.com/making-sense-of-bellman-equation-rl-ml4lm-cd0e6fcc2098"
+    logo: "https://miro.medium.com/v2/resize:fit:828/format:webp/1*LW-v8IKzwgIU-QKKaEfepw.png"
+    description: "Unpacking the Bellman equations and their role in Reinforcement Learning"
+
+  - date: "Mar 4, 2024"
+    title: "ML4LM — MLE vs Bayesian intuitive Insights, No Math!"
+    url: "https://hoyath.medium.com/ml4lm-mle-vs-bayesian-intuitive-insights-no-math-77c260970579"
+    logo: "https://miro.medium.com/v2/resize:fit:88/format:webp/1*KCXhOBh0RfM8QcZKB2hrPg.png"
+    description: "Intuitive comparison between Maximum Likelihood Estimation and Bayesian approaches without diving into complex mathematical formulations."
+
+  - date: "Jan 1, 2024"
+    title: "ML4LM - Vanishing Gradient Problem?"
+    url: "https://hoyath.medium.com/vanishing-gradient-problem-583ce734af39"
+    logo: "https://miro.medium.com/v2/resize:fit:88/format:webp/1*8gvxaQ5iDXvg_0OZzc6a2A.png"
+    description: "Understanding the vanishing gradient problem in deep neural networks and exploring solutions to overcome this common training challenge."
+
+  - date: "Dec 24, 2023"
     title: "ML4LM- How does Lasso bring sparsity?"
     url: "https://hoyath.medium.com/ml4lm-how-does-lasso-bring-sparsity-29f3efe31ab3"
     logo: "https://miro.medium.com/v2/resize:fit:640/format:webp/1*1EfAhEVm8eW-tAgM8KW-eg.png"
     description: "Lasso regression: how its unique constraint shape brings sparsity by pushing coefficients to zero, simplifying models and fighting overfitting."
 
-  - date: ""
-    title: "ML4LM — RL — Making sense of Bellman EquationIntroduction"
-    url: "https://hoyath.medium.com/making-sense-of-bellman-equation-rl-ml4lm-cd0e6fcc2098"
-    logo: "https://miro.medium.com/v2/resize:fit:828/format:webp/1*LW-v8IKzwgIU-QKKaEfepw.png"
-    description: "Unpacking the Bellman equations and their role in Reinforcement Learning"
+  - date: "Dec 21, 2023"
+    title: "ML4LM — What are Derivatives?"
+    url: "https://hoyath.medium.com/ml4lm-what-aderivatives-98e16eb13e3d"
+    logo: "https://miro.medium.com/v2/resize:fit:88/format:webp/1*ahJiQpeL13vi7JGUCegXng.png"
+    description: "A fundamental explanation of derivatives in the context of machine learning, covering their importance in optimization and gradient-based methods."
+
+  - date: "Nov 27, 2023"
+    title: "ML4LM-Feature Scaling- Normalization"
+    url: "https://hoyath.medium.com/ml4lm-feature-scaling-fd9731352d0a"
+    logo: "https://miro.medium.com/v2/resize:fit:88/format:webp/1*BeXtIHPuEiIlSXWuvsPA4w.png"
+    description: "Understanding feature scaling and normalization techniques, their importance in machine learning, and when to apply different scaling methods."
+
+  - date: "Nov 24, 2023"
+    title: "ML4LM— Cleaning the Data"
+    url: "https://hoyath.medium.com/ml4lm-cleaning-the-data-f93f911039c3"
+    logo: "https://miro.medium.com/v2/resize:fit:88/format:webp/1*rqGNbXfdaxNWO_FFFVlNEQ.jpeg"
+    description: "Essential data cleaning techniques and best practices for preparing datasets for machine learning, covering common issues and solutions."
 
 ---
 
