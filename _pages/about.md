@@ -6,11 +6,11 @@ redirect_from:
   - /about/
   - /about.html
 news_and_updates:
-  - date: "Sep 2024"
-    organization: "Revent Solutions, Ashburn"
-    url: "https://reventsolutions.com/"
-    logo: "https://cdn.cmsfly.com/6601ca74197a880013d1b524/revent-solutions-logos-2-PD5-zQ.png"
-    description: "Joined Revent Solutions as a Machine Learning Engineer Intern, where I developed and deployed a hybrid recommendation system that increased user engagement by 30% and article click-through rates by 25%, while handling the entire project lifecycle from data scraping to scalable deployment on Oracle Cloud."
+  - date: "Feb 2025"
+    organization: "Axiado Corporation"
+    url: "https://axiado.com/"
+    logo: "https://www.google.com/url?sa=i&url=https%3A%2F%2Faxiado.com%2F&psig=AOvVaw2lroOsn3U-QwHPK60zDZMl&ust=1758765614514000&source=images&cd=vfe&opi=89978449&ved=0CBYQjRxqFwoTCLCqkc-m8I8DFQAAAAAdAAAAABAL"
+    description: "Joined Axiado Corporation as a Machine Learning Engineer (Full-time) in Feb 2025 (San Jose, CA, On-site). Designed and deployed machine learning models on edge devices using TensorFlow Lite for efficient real-time inference. Implemented quantization-aware training (QAT) and post-training quantization (PTQ) to optimize models for edge deployment. Performed model profiling and performance optimization to ensure low-latency and resource-efficient execution."
 
   - date: "Sep 2023"
     organization: "University Of California, Riverside"
@@ -66,7 +66,7 @@ blogs:
 
 
 
-I am a Machine Learning Engineer with 3 years of experience specializing in machine learning solutions. Currently interning at [Revent Solutions](https://reventsolutions.com/), I developed hybrid recommendation systems that boosted user engagement by 30%. My previous experience includes fine-tuning large language models at [Bluevoir](https://bluevoir.com/) to automate clinical trial protocols, significantly enhancing efficiency, and creating anomaly detection systems at [Goldman Sachs](https://www.goldmansachs.com/) that prevented monthly write-offs of $1-2 million, demonstrating my ability to deliver impactful solutions.
+I am a Machine Learning Engineer with around 4 years of experience specializing in developing and deploying machine learning solutions. At [Axiado Corporation](https://axiado.com/) (Feb 2025 – Present, San Jose, CA), I design and deploy machine learning models on edge devices using TensorFlow Lite for efficient real-time inference. My work includes implementing quantization-aware training (QAT) and post-training quantization (PTQ) to optimize models for edge deployment, as well as performing model profiling and performance optimization to ensure low-latency and resource-efficient execution. Previously, at [Goldman Sachs](https://www.goldmansachs.com/), I created anomaly detection systems that prevented monthly write-offs of $1-2 million, demonstrating my ability to deliver impactful solutions.
 
 
 Currently pursuing my Master’s in Computer Science at the [University of California, Riverside](https://www.ucr.edu/) 🎓, I am eager to apply my advanced ML techniques to solve real-world problems, and I'm open to collaborations and opportunities. 
