@@ -38,6 +38,12 @@ news_and_updates:
 
 blogs:
 
+  - date: "Feb 10, 2025"
+    title: "ML4LM — Speculative Decoding — from where we left off"
+    url: "https://hoyath.medium.com/ml4lm-speculative-decoding-from-where-we-left-off-ce376f7d1a2f"
+    logo: "https://miro.medium.com/v2/resize:fit:88/format:webp/1*lsHrV5x9cv6Zsl9jhWYOBA.png"
+    description: "Most blogs stop at the basics and skip the real details. I break down what's usually missing: batching, accept/reject checks, and fallbacks."
+
   - date: "Sep 11, 2025"
     title: "ML4LM — Profiling torch.compile on DenseNet-121 Inference (GTX 1650)"
     url: "https://hoyath.medium.com/ml4lm-profiling-torch-compile-on-densenet-121-inference-gtx-1650-6984605dcff5"
