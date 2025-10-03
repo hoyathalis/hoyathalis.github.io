@@ -38,7 +38,7 @@ news_and_updates:
 
 blogs:
 
-  - date: "Feb 10, 2025"
+  - date: "Oct 2, 2025"
     title: "ML4LM — Speculative Decoding — from where we left off"
     url: "https://hoyath.medium.com/ml4lm-speculative-decoding-from-where-we-left-off-ce376f7d1a2f"
     logo: "https://miro.medium.com/v2/resize:fit:88/format:webp/1*lsHrV5x9cv6Zsl9jhWYOBA.png"
