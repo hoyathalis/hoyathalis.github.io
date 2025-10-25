@@ -1,6 +1,5 @@
 <script>
   document.addEventListener('DOMContentLoaded', async () => {
-    const userid = 'visitor';  
     const level = 'info';      
 
     const logSheetUrl = 'https://log-api.newrelic.com/log/v1?Api-Key=5229e7f7b5ce83cbdaec27036f5e52f5FFFFNRAL';
@@ -24,11 +23,74 @@
       }
     }
 
-    // Log entry with geolocation
-    async function logPortfolioVisit(userid, level) {
+    // Gather minimal visit metadata
+    function getVisitorMetadata() {
+      const nav = typeof navigator !== 'undefined' ? navigator : {};
+      const tz = (typeof Intl !== 'undefined' && Intl.DateTimeFormat) ? Intl.DateTimeFormat().resolvedOptions().timeZone : undefined;
+
+      // Stable anonymous IDs
+      let visitorId = undefined;
       try {
+        visitorId = localStorage.getItem('visitorId');
+        if (!visitorId) {
+          visitorId = (typeof crypto !== 'undefined' && crypto.randomUUID) ? crypto.randomUUID() : (Date.now() + '-' + Math.random().toString(36).slice(2));
+          localStorage.setItem('visitorId', visitorId);
+        }
+      } catch (_) {}
+
+      const dnt = (nav.doNotTrack === '1' || window.doNotTrack === '1' || nav.msDoNotTrack === '1');
+
+      return {
+        referrer: document.referrer,
+        timezone: tz,
+        dnt,
+        visitorId
+      };
+    }
+
+    function getUtmParams() {
+      try {
+        const params = new URLSearchParams(window.location.search);
+        return {
+          utm_source: params.get('utm_source') || undefined,
+          utm_medium: params.get('utm_medium') || undefined,
+          utm_campaign: params.get('utm_campaign') || undefined,
+          utm_term: params.get('utm_term') || undefined,
+          utm_content: params.get('utm_content') || undefined
+        };
+      } catch (_) {
+        return {};
+      }
+    }
+
+    function determineTrafficSource(referrer, utm) {
+      try {
+        if (utm.utm_source) return 'campaign';
+        if (!referrer) return 'direct';
+        const url = new URL(referrer);
+        const host = url.hostname || '';
+        const social = ['twitter.com','x.com','linkedin.com','facebook.com','instagram.com','t.co','reddit.com'];
+        if (/(google|bing|yahoo|duckduckgo)\./.test(host)) return 'organic';
+        if (social.some(d => host.endsWith(d))) return 'social';
+        return 'referral';
+      } catch (_) {
+        return 'direct';
+      }
+    }
+
+    // Log entry with geolocation
+    async function logPortfolioVisit(level) {
+      try {
+        const metadata = getVisitorMetadata();
+        if (metadata.dnt) {
+          console.warn('Do Not Track enabled; skipping visit logging');
+          return;
+        }
+        const userid = metadata.visitorId || 'visitor';
         console.log(`Logging portfolio visit for user: ${userid}...`);
         const locationInfo = await getVisitorLocation();
+        const utm = getUtmParams();
+        const trafficSource = determineTrafficSource(metadata.referrer, utm);
         const logEntry = {
           "common": {
             "attributes": {
@@ -44,7 +106,27 @@
               "level": level,
               "userid": userid,
               "page": window.location.href,
-              "location": locationInfo // Include location info here
+              // Flattened IP geolocation
+              "ip": locationInfo && locationInfo.ip,
+              "city": locationInfo && locationInfo.city,
+              "region": locationInfo && locationInfo.region,
+              "country": locationInfo && locationInfo.country,
+              "loc": locationInfo && locationInfo.loc,
+              "org": locationInfo && locationInfo.org,
+              "postal": locationInfo && locationInfo.postal,
+              "timezone_ip": locationInfo && locationInfo.timezone,
+              // Minimal visit metadata
+              "referrer": metadata.referrer,
+              "timezone": metadata.timezone,
+              "traffic_source": trafficSource,
+              "visitorId": metadata.visitorId,
+
+              // Campaign params & how they reached
+              "utm_source": utm.utm_source,
+              "utm_medium": utm.utm_medium,
+              "utm_campaign": utm.utm_campaign,
+              "utm_term": utm.utm_term,
+              "utm_content": utm.utm_content
             }
           }]
         };
@@ -69,7 +151,7 @@
     }
 
     // Call the log function to log the visit
-    await logPortfolioVisit(userid, level);
+    await logPortfolioVisit(level);
   });
 </script>
 

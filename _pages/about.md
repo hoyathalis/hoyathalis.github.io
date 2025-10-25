@@ -16,7 +16,7 @@ news_and_updates:
     organization: "University Of California, Riverside"
     url: "https://ucr.edu"
     logo: "https://websites.ucr.edu/sites/default/files/styles/form_preview/public/logo-horizontal-on-white_0.png?itok=C8v1rbQR"
-    description: "Pursuing a Master’s in Machine Learning to enhance my industry experience with advanced theoretical and practical knowledge."
+    description: "Completed Master's in Computer Science in December 2024, enhancing my industry experience with advanced theoretical and practical knowledge."
 
   - date: "Feb 2023"
     organization: "Bluevoir Technologies"
@@ -82,7 +82,7 @@ blogs:
 I am a Machine Learning Engineer with around 4 years of experience specializing in developing and deploying machine learning solutions. At [Axiado Corporation](https://axiado.com/) (Feb 2025 – Present, San Jose, CA), I design and deploy machine learning models on edge devices using TensorFlow Lite for efficient real-time inference. My work includes implementing quantization-aware training (QAT) and post-training quantization (PTQ) to optimize models for edge deployment, as well as performing model profiling and performance optimization to ensure low-latency and resource-efficient execution. Previously, at [Goldman Sachs](https://www.goldmansachs.com/), I created anomaly detection systems that prevented monthly write-offs of $1-2 million, demonstrating my ability to deliver impactful solutions.
 
 
-Currently pursuing my Master’s in Computer Science at the [University of California, Riverside](https://www.ucr.edu/) 🎓, I am eager to apply my advanced ML techniques to solve real-world problems, and I'm open to collaborations and opportunities. 
+Having completed my Master's in Computer Science at the [University of California, Riverside](https://www.ucr.edu/) in December 2024 🎓, I am eager to apply my advanced ML techniques to solve real-world problems, and I'm open to collaborations and opportunities. 
 
 <div class="skills-container" style="display: flex; flex-wrap: wrap; gap: 5px; font-size: 14px;">
     <!-- Core Programming Languages -->
