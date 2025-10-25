@@ -1,26 +1,31 @@
 <script>
-  document.addEventListener('DOMContentLoaded', async () => {
+(function() {
+  'use strict';
+  
+  document.addEventListener('DOMContentLoaded', function() {
     const level = 'info';      
-
     const logSheetUrl = 'https://log-api.newrelic.com/log/v1?Api-Key=5229e7f7b5ce83cbdaec27036f5e52f5FFFFNRAL';
 
     console.log("DOM fully loaded. Starting log process...");
 
     // Function to get IP-based location info
-    async function getVisitorLocation() {
+    function getVisitorLocation() {
       console.log("Fetching visitor location...");
-      try {
-        const response = await fetch('https://ipinfo.io/json');
-        if (!response.ok) {
-          throw new Error('Failed to fetch IP geolocation data');
-        }
-        const data = await response.json();
-        console.log("Visitor location data fetched successfully:", data);
-        return data;
-      } catch (error) {
-        console.error('Error fetching IP geolocation:', error);
-        return null;  // Return null to handle gracefully if there's an error
-      }
+      return fetch('https://ipinfo.io/json')
+        .then(function(response) {
+          if (!response.ok) {
+            throw new Error('Failed to fetch IP geolocation data');
+          }
+          return response.json();
+        })
+        .then(function(data) {
+          console.log("Visitor location data fetched successfully:", data);
+          return data;
+        })
+        .catch(function(error) {
+          console.error('Error fetching IP geolocation:', error);
+          return null;
+        });
     }
 
     // Gather minimal visit metadata
@@ -29,22 +34,24 @@
       const tz = (typeof Intl !== 'undefined' && Intl.DateTimeFormat) ? Intl.DateTimeFormat().resolvedOptions().timeZone : undefined;
 
       // Stable anonymous IDs
-      let visitorId = undefined;
+      let visitorId = 'visitor';
       try {
         visitorId = localStorage.getItem('visitorId');
         if (!visitorId) {
           visitorId = (typeof crypto !== 'undefined' && crypto.randomUUID) ? crypto.randomUUID() : (Date.now() + '-' + Math.random().toString(36).slice(2));
           localStorage.setItem('visitorId', visitorId);
         }
-      } catch (_) {}
+      } catch (e) {
+        visitorId = 'visitor';
+      }
 
       const dnt = (nav.doNotTrack === '1' || window.doNotTrack === '1' || nav.msDoNotTrack === '1');
 
       return {
         referrer: document.referrer,
         timezone: tz,
-        dnt,
-        visitorId
+        dnt: dnt,
+        visitorId: visitorId
       };
     }
 
@@ -58,7 +65,7 @@
           utm_term: params.get('utm_term') || undefined,
           utm_content: params.get('utm_content') || undefined
         };
-      } catch (_) {
+      } catch (e) {
         return {};
       }
     }
@@ -71,24 +78,25 @@
         const host = url.hostname || '';
         const social = ['twitter.com','x.com','linkedin.com','facebook.com','instagram.com','t.co','reddit.com'];
         if (/(google|bing|yahoo|duckduckgo)\./.test(host)) return 'organic';
-        if (social.some(d => host.endsWith(d))) return 'social';
+        if (social.some(function(d) { return host.endsWith(d); })) return 'social';
         return 'referral';
-      } catch (_) {
+      } catch (e) {
         return 'direct';
       }
     }
 
     // Log entry with geolocation
-    async function logPortfolioVisit(level) {
-      try {
-        const metadata = getVisitorMetadata();
-        if (metadata.dnt) {
-          console.warn('Do Not Track enabled; skipping visit logging');
-          return;
-        }
-        const userid = metadata.visitorId || 'visitor';
-        console.log(`Logging portfolio visit for user: ${userid}...`);
-        const locationInfo = await getVisitorLocation();
+    function logPortfolioVisit(level) {
+      const metadata = getVisitorMetadata();
+      if (metadata.dnt) {
+        console.warn('Do Not Track enabled; skipping visit logging');
+        return;
+      }
+      
+      const userid = metadata.visitorId;
+      console.log('Logging portfolio visit for user: ' + userid + '...');
+      
+      getVisitorLocation().then(function(locationInfo) {
         const utm = getUtmParams();
         const trafficSource = determineTrafficSource(metadata.referrer, utm);
         const logEntry = {
@@ -101,12 +109,11 @@
           },
           "logs": [{
             "timestamp": new Date().toISOString(),
-            "message": `User '${userid}' visited the portfolio`,
+            "message": "User '" + userid + "' visited the portfolio",
             "attributes": {
               "level": level,
               "userid": userid,
               "page": window.location.href,
-              // Flattened IP geolocation
               "ip": locationInfo && locationInfo.ip,
               "city": locationInfo && locationInfo.city,
               "region": locationInfo && locationInfo.region,
@@ -115,13 +122,10 @@
               "org": locationInfo && locationInfo.org,
               "postal": locationInfo && locationInfo.postal,
               "timezone_ip": locationInfo && locationInfo.timezone,
-              // Minimal visit metadata
               "referrer": metadata.referrer,
               "timezone": metadata.timezone,
               "traffic_source": trafficSource,
               "visitorId": metadata.visitorId,
-
-              // Campaign params & how they reached
               "utm_source": utm.utm_source,
               "utm_medium": utm.utm_medium,
               "utm_campaign": utm.utm_campaign,
@@ -133,26 +137,27 @@
 
         console.log("Log entry prepared:", logEntry);
 
-        // Send log entry to New Relic or other logging service
-        const response = await fetch(logSheetUrl, {
+        return fetch(logSheetUrl, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
           },
           body: JSON.stringify(logEntry)
         });
+      }).then(function(response) {
         if (!response.ok) {
           throw new Error('Failed to log portfolio visit');
         }
         console.log('Portfolio visit logged successfully');
-      } catch (error) {
+      }).catch(function(error) {
         console.error('Error logging portfolio visit:', error);
-      }
+      });
     }
 
     // Call the log function to log the visit
-    await logPortfolioVisit(level);
+    logPortfolioVisit(level);
   });
+})();
 </script>
 
 {% if site.comments.provider and page.comments %}
